@@ -1,10 +1,10 @@
-import './App.css'
+import Router from "./Router/Router";
 
 const App = () => {
 
   return (
     <>
-      <p>hello</p>
+    <Router />
     </>
   )
 }
