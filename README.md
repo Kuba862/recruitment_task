@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# The task is to test the freedom to work with React, REST API, React Hooks and custom Hooks.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+**All the code has been prepared accordingly.**
+**We do not focus on styling or RWD because I assume this is perfectly mastered.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The goal of the task is:
+1. retrieve data specific to a particular segment from the API
+2. display this data as a list on the home page
+3. on changing the segment, retrieve the data specific to that segment from the API
+4. clicking on the title is to render the `Petition.tsx` component, which will display the data from the home page and the others
+4a. If the `Petition.tsx` component is rendered after clicking on the title in `HomePage.tsx` then there is no API re-query -> state transfer
+5. the `Petition.tsx` component must display the data regardless of whether it was rendered after `HomePage.tsx` or the URL was entered directly `(e.g. http://localhost:5173/13055)`
 
-## Expanding the ESLint configuration
+getting started:
+1. download the repository
+2. install dependencies in the backend: `npm install`
+3. start the backend: `npm run start`
+4. install dependencies in the frontend: `npm install`
+5. run frontend: `npm run dev`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Description:
+Nothing needs to be done in the backend file. It is a server in Express.js that exposes sample data to the appropriate endpoint and filters the data based on parameters.
 
-- Configure the top-level `parserOptions` property like this:
+`usePetitions.tsx` and `useId.tsx` -> custom hookups that support data retrieval 
+`Pages` -> page components
+`components` -> folder for Header.tsx and LanguageSelector.tsx
+`Router` -> routing support using react-router-dom
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Rules:
+### Don't use AI (chat GPT, github copilot, etc) - this task is to test knowledge and logical thinking
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Don't use StackOverflow - same as above
+
+### We are not in the Middle Ages so we use additional libraries like axios; you can use documentation, MDN, etc.
+
+### At the end of the work, please do a commit, describe the changes in general, include your name and push out the changes
