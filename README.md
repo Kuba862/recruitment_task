@@ -24,7 +24,7 @@ Nothing needs to be done in the backend file. It is a server in Express.js that 
 
 `usePetitions.tsx` and `useId.tsx` -> custom hookups that support data retrieval 
 `Pages` -> page components
-`components` -> folder for Header.tsx and LanguageSelector.tsx
+`components` -> folder for `Header.tsx` and `LanguageSelector.tsx`
 `Router` -> routing support using react-router-dom
 
 Rules:
