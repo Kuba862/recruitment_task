@@ -1,8 +1,8 @@
 # :fire: The task is to test the freedom to work with React, REST API, React Hooks and custom Hooks :fire:
 
-## **All the code has been prepared accordingly.**
+# :fire: All the code has been prepared accordingly :fire:
 
-## **We do not focus on styling or RWD because I assume this is perfectly mastered.**
+# :fire: We do not focus on styling or RWD because I assume this is perfectly mastered :fire:
 
 ### :computer: The goal of the task is: 
 
@@ -10,10 +10,10 @@
 2. Display this data as a list on the home page
 3. On changing the segment, retrieve the data specific to that segment from the API
 4. Clicking on the title is to render the `Petition.tsx` component, which will display the data from the home page and the others
-   4a. If the `Petition.tsx` component is rendered after clicking on the title in `HomePage.tsx` then there is no API re-query -> state transfer
+   - If the `Petition.tsx` component is rendered after clicking on the title in `HomePage.tsx` then there is no API re-query -> state transfer
 5. The `Petition.tsx` component must display the data regardless of whether it was rendered after `HomePage.tsx` or the URL was entered directly `e.g. (http://localhost:5173/13055)`
 
-### getting started:
+### :computer: getting started:
 
 1. Download the repository
 2. Install dependencies in the backend: `npm install`
@@ -21,17 +21,19 @@
 4. Install dependencies in the frontend: `npm install`
 5. Run frontend: `npm run dev`
 
-### Description:
+### :page_with_curl: Description:
 
 Nothing needs to be done in the backend file.
+
 It is a server in Express.js that exposes sample data to the appropriate endpoint and filters the data based on parameters.
 
-`usePetitions.tsx` and `useId.tsx` -> custom hookups that support data retrieval
-`Pages` -> page components
-`components` -> folder for `Header.tsx` and `LanguageSelector.tsx`
-`Router` -> routing support using react-router-dom
 
-### Rules:
+* `usePetitions.tsx` and `useId.tsx` -> custom hookups that support data retrieval
+* `Pages` -> page components
+* `components` -> folder for `Header.tsx` and `LanguageSelector.tsx`
+* `Router` -> routing support using react-router-dom
+
+### :bookmark: Rules:
 
 ### :no_entry: Don't use AI (chat GPT, github copilot, etc) - this task is to test knowledge and logical thinking
 
