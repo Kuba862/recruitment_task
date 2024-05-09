@@ -47,7 +47,7 @@ It is a server in Express.js that exposes sample data to the appropriate endpoin
 
 <details>
 
-:point_right: <summary> Auxiliary task list</summary>
+<summary>:point_right: Auxiliary task list</summary>
 
 - [ ] check the available parameters and use them to retrieve data from the API
 - [ ] use the data in the home page component
