@@ -35,15 +35,15 @@ It is a server in Express.js that exposes sample data to the appropriate endpoin
 
 ### :bookmark: Rules:
 
-### :no_entry: Don't use AI (chat GPT, github copilot, etc) - this task is to test knowledge and logical thinking
+:no_entry: Don't use AI (chat GPT, github copilot, etc) - this task is to test knowledge and logical thinking
 
-### :no_entry: Don't use StackOverflow - same as above
+:no_entry: Don't use StackOverflow - same as above
 
-### :green_circle: We are not in the Middle Ages so we use additional libraries like axios; you can use documentation, MDN, etc.
+:green_circle: We are not in the Middle Ages so we use additional libraries like axios; you can use documentation, MDN, etc.
 
-### :rotating_light: At the end of the work, please do a commit, describe the changes in general, include your name and push out the changes
+:rotating_light: At the end of the work, please do a commit, describe the changes in general, include your name and push out the changes
 
-### Target preview:
+### :movie_camera: Target preview:
 
 :point_right: [video](https://youtu.be/219grg7nXHI)
 
