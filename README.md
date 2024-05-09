@@ -1,7 +1,7 @@
 # The task is to test the freedom to work with React, REST API, React Hooks and custom Hooks.
 
-
 ## **All the code has been prepared accordingly.**
+
 ## **We do not focus on styling or RWD because I assume this is perfectly mastered.**
 
 ### The goal of the task is:
@@ -10,7 +10,7 @@
 2. Display this data as a list on the home page
 3. On changing the segment, retrieve the data specific to that segment from the API
 4. Clicking on the title is to render the `Petition.tsx` component, which will display the data from the home page and the others
-  4a. If the `Petition.tsx` component is rendered after clicking on the title in `HomePage.tsx` then there is no API re-query -> state transfer
+   4a. If the `Petition.tsx` component is rendered after clicking on the title in `HomePage.tsx` then there is no API re-query -> state transfer
 5. The `Petition.tsx` component must display the data regardless of whether it was rendered after `HomePage.tsx` or the URL was entered directly `e.g. (http://localhost:5173/13055)`
 
 ### getting started:
@@ -23,10 +23,10 @@
 
 ### Description:
 
-Nothing needs to be done in the backend file. 
+Nothing needs to be done in the backend file.
 It is a server in Express.js that exposes sample data to the appropriate endpoint and filters the data based on parameters.
 
-`usePetitions.tsx` and `useId.tsx` -> custom hookups that support data retrieval 
+`usePetitions.tsx` and `useId.tsx` -> custom hookups that support data retrieval
 `Pages` -> page components
 `components` -> folder for `Header.tsx` and `LanguageSelector.tsx`
 `Router` -> routing support using react-router-dom
@@ -41,3 +41,19 @@ It is a server in Express.js that exposes sample data to the appropriate endpoin
 
 ### At the end of the work, please do a commit, describe the changes in general, include your name and push out the changes
 
+### Target preview:
+
+[video](https://youtu.be/219grg7nXHI)
+
+<details>
+
+<summary> Auxiliary task list</summary>
+
+- [ ] sprawdź dostępne parametry i uzyj ich do pobrania danych z API
+- [ ] uzyj danych w komponencie strony głównej
+- [ ] obsłuz pobieranie danych na zmianę w selektorze
+- [ ] wyrenderuj komponent Petition.tsx na kliknięcie w tytuł petycji
+- [ ] znajdź sposób na przekazanie danych do Petition.tsx
+- [ ] jezeli skopiujesz URL z Petition.tsx i wkleisz do nowej karty strona będzie pusta - rozwiąz to
+
+</details>
