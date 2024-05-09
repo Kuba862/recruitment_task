@@ -1,10 +1,10 @@
-# The task is to test the freedom to work with React, REST API, React Hooks and custom Hooks.
+# :fire: The task is to test the freedom to work with React, REST API, React Hooks and custom Hooks :fire:
 
 ## **All the code has been prepared accordingly.**
 
 ## **We do not focus on styling or RWD because I assume this is perfectly mastered.**
 
-### The goal of the task is:
+### :computer: The goal of the task is: 
 
 1. Retrieve data specific to a particular segment from the API
 2. Display this data as a list on the home page
@@ -33,27 +33,27 @@ It is a server in Express.js that exposes sample data to the appropriate endpoin
 
 ### Rules:
 
-### Don't use AI (chat GPT, github copilot, etc) - this task is to test knowledge and logical thinking
+### :no_entry: Don't use AI (chat GPT, github copilot, etc) - this task is to test knowledge and logical thinking
 
-### Don't use StackOverflow - same as above
+### :no_entry: Don't use StackOverflow - same as above
 
-### We are not in the Middle Ages so we use additional libraries like axios; you can use documentation, MDN, etc.
+### :green_circle: We are not in the Middle Ages so we use additional libraries like axios; you can use documentation, MDN, etc.
 
-### At the end of the work, please do a commit, describe the changes in general, include your name and push out the changes
+### :rotating_light: At the end of the work, please do a commit, describe the changes in general, include your name and push out the changes
 
 ### Target preview:
 
-[video](https://youtu.be/219grg7nXHI)
+:point_right: [video](https://youtu.be/219grg7nXHI)
 
 <details>
 
-<summary> Auxiliary task list</summary>
+:point_right: <summary> Auxiliary task list</summary>
 
-- [ ] sprawdź dostępne parametry i uzyj ich do pobrania danych z API
-- [ ] uzyj danych w komponencie strony głównej
-- [ ] obsłuz pobieranie danych na zmianę w selektorze
-- [ ] wyrenderuj komponent Petition.tsx na kliknięcie w tytuł petycji
-- [ ] znajdź sposób na przekazanie danych do Petition.tsx
-- [ ] jezeli skopiujesz URL z Petition.tsx i wkleisz do nowej karty strona będzie pusta - rozwiąz to
-
+- [ ] check the available parameters and use them to retrieve data from the API
+- [ ] use the data in the home page component
+- [ ] handle data retrieval per selector change
+- [ ] render Petition.tsx component on click on petition title
+- [ ] find a way to pass data to Petition.tsx
+- [ ] if you copy the URL from Petition.tsx and paste it into a new tab the page will be blank - solve this
+- [ ] complete the task :fist_right: :fist_left:
 </details>
