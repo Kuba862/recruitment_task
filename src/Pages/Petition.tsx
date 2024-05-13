@@ -1,7 +1,4 @@
-import { useState } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
 import styled from 'styled-components';
-import useId from '../hooks/useId';
 
 const Page = styled.section`
   display: grid;
@@ -50,32 +47,25 @@ export const sanitizedData = (data: string) => ({
 });
 
 const Petition = () => {
-  const { id } = useParams();
-  const location = useLocation();
-  let petition = location.state;
-  if (id) {
-    const result = useId({ id: id });
-    petition = result.petitionData;
-  }
 
   return (
     <Page>
       <BodySection>
-        <h1>{petition?.title}</h1>
-        <img src={petition?.featured_image} />
-        <span>petition to {petition?.recipient_name}</span>
-        <p dangerouslySetInnerHTML={sanitizedData(petition?.body)}></p>
+        <h1>Title</h1>
+        {/* image */}
+        {/* <span>petition to <recipient_name></span> */}
+        <p>Petition body without HTML</p>
       </BodySection>
       <TeaserSection>
         <div>
           <h3>
-            Target of this petition: {petition?.goal?.toLocaleString('en-us')}
+            Target of this petition: petition goal in 10,000 format
           </h3>
           <h4>
-            Current signatures: {petition?.signature_count?.toLocaleString('fr')}
+            Current signatures: signature count in 10 000 format
           </h4>
         </div>
-        <p dangerouslySetInnerHTML={sanitizedData(petition?.teaser)}></p>
+        <p>Petition teaser without HTML tags</p>
       </TeaserSection>
     </Page>
   );

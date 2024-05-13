@@ -1,9 +1,7 @@
-import { usePetitions } from '../hooks/usePetitions';
 import styled from 'styled-components';
-import { useNavigate } from 'react-router-dom';
 import LanguageSelector from '../components/LanguageSelector';
 import { useState } from 'react';
-import { sanitizedData } from './Petition';
+import Target from '../components/target';
 
 const Section = styled.section`
   display: flex;
@@ -48,50 +46,22 @@ type NaviagateHandler = (path: string, state: object) => void;
 
 const HomePage = () => {
   const [currentSegment, setCurrentSegment] = useState('en-us');
-  const { petitions } = usePetitions({
-    endpoint: '/api/petitions/',
-    segment: `segment=${currentSegment}`,
-  });
-
-  const navigate = useNavigate();
-
-  const navigateHandler: NaviagateHandler = (path, state) =>
-    navigate(path, { state: state });
 
   return (
     <>
       <LanguageSelector setCurrentSegment={setCurrentSegment} />
       <Section>
-        {petitions.map(
-          (
-            petition: {
-              title: string;
-              body: string;
-              featured_image: string;
-              id: number;
-            },
-            index: number
-          ) => (
-            <Petition key={index}>
+            <div className='styled_Petition'>
               <div>
-                <h3
-                  onClick={() =>
-                    navigateHandler(
-                      `${petition.id}/${petition.title.trim()}`,
-                      petition
-                    )
-                  }
-                  dangerouslySetInnerHTML={sanitizedData(petition.title)}
-                ></h3>
-                <p dangerouslySetInnerHTML={sanitizedData(petition.body)}></p>
+                <h3>Title without HTML tags - linked</h3>
+                <p>Body without HTML tags</p>
               </div>
               <div>
-                <img src={petition.featured_image} />
+                {/* petition image */}
               </div>
-            </Petition>
-          )
-        )}
+            </div>
       </Section>
+      <Target />
     </>
   );
 };
